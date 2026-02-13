@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>StormGuard | Resources</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="slide-down">
+    <div class="logo">
+      <div class="logo-mark">SG</div>
+      <div>
+        <h1>StormGuard</h1>
+        <p>Rescue & Relief Hub ·  Back’em Up Bratz</p>
+      </div>
+    </div>
+
+    <!-- NAV -->
+     <nav>
+      <a href="index.html">Home</a>
+      <a href="storm-info.html">Storm Info</a>
+      <a href="game.html">Game</a>
+      <a href="poem.html">Poem</a>
+      <a href="emergency.html">Emergency</a>
+      <a href="community.html">Community Support</a>
+      <a href="volunteer.html">Volunteer</a>
+      <a href="stormband.html">StormBand</a>
+      <a href="future.html">Future</a>
+
+      <!-- DROPDOWN -->
+      <div class="nav-more">
+        <div class="nav-more-button" onclick="toggleDropdown()">More</div>
+        <div class="nav-more-menu" id="dropdownMenu">
+          <a href="team.html">Team</a>
+          <a href="citations.html">Citations</a>
+          <a href="resources.html">Resources</a>
+          <a href="faq.html">FAQ</a>
+           <a href="help.html">Help</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+<!--For the dropdown menu!-->
+ <script>
+  function toggleDropdown() {
+    const dropdownMenu = document.getElementById('dropdownMenu');
+    dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.nav-more-button')) {
+      const dropdowns = document.getElementsByClassName('nav-more-menu');
+      for (let i = 0; i < dropdowns.length; i++) {
+        const openDropdown = dropdowns[i];
+        if (openDropdown.style.display === 'block') {
+          openDropdown.style.display = 'none';
+        }
+      }
+    }
+  }
+</script>
+
+  <!-- MAIN -->
+  <main class="fade-in">
+    <section>
+      <h2>Storm Safety Resources</h2>
+      <p>
+        This page gathers helpful tools, guides, and websites that can keep you safe
+        before, during, and after storms. These resources are trusted, easy to use,
+        and perfect for families, students, and communities.
+      </p>
+
+      <h3>Emergency Preparedness</h3>
+      <ul>
+        <li>How to build a storm kit</li>
+        <li>Evacuation planning worksheets</li>
+        <li>Printable emergency contact cards</li>
+        <li>Flood safety checklists</li>
+      </ul>
+
+      <h3>Weather Tracking Tools</h3>
+      <ul>
+        <li>Local weather alerts</li>
+        <li>Storm radar maps</li>
+        <li>Flood zone maps</li>
+        <li>Hurricane tracking tools</li>
+      </ul>
+
+      <h3>Community Support</h3>
+      <ul>
+        <li>Local shelters</li>
+        <li>Food banks</li>
+        <li>Emergency hotlines</li>
+        <li>Volunteer organizations</li>
+      </ul>
+
+      <p>
+        StormGuard is all about helping people stay safe, informed, and connected.
+        These resources are here to support you every step of the way.
+      </p>
+    </section>
+  </main>
+
+  <footer>StormGuard © 2026 · Built by Back’em Up Bratz</footer>
+</body>
+</html>

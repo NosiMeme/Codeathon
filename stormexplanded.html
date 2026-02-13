@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>StormGuard | Home</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- LOADER -->
+  <div id="loader">
+    <div class="loader-logo">StormGuard</div>
+    <div class="loader-spinner"></div>
+    <p>Loading safety, style & storm power…</p>
+  </div>
+
+  <!-- HEADER -->
+  <header class="slide-down">
+    <div class="logo">
+      <div class="logo-mark">SG</div>
+      <div>
+        <h1>StormGuard</h1>
+        <p>Rescue & Relief Hub · Back’em Up Bratz</p>
+      </div>
+    </div>
+
+    <nav>
+      <a href="index.html"> <span class="icon"><span class="icon"></span></span>Home</a>
+      <a href="storm-info.html">Storm Info</a>
+      <a href="game.html">Game</a>
+      <a href="poem.html">Poem</a>
+      <a href="help.html">Help</a>
+       <a href="emergency.html">Emergency</a>
+      <a href="stormband.html">StormBand</a>
+      <a href="future.html">Future</a>
+     
+
+      <!-- DROPDOWN -->
+       <div class="nav-more">
+    <div class="nav-more-button" onclick="toggleDropdown()">More</div>
+    <div class="nav-more-menu" id="dropdownMenu">
+         <a href="team.html">Team</a>
+         <a href="citations.html">Citations</a>
+         <a href="resources.html">Resources</a>
+         <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+          <a href="community.html">Community Support</a>
+          <a href="volunteer.html">Volunteer</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="fade-in">
+    <section>
+    <h2>How to Stay Safe Before, During & After Storms</h2>
+        <p>
+          Knowing what to do can save your life and the lives of others.
+        </p> <br> 
+        <h3>Before a Storm (Expanded)</h3>
+        <ul>
+          <li>Secure outdoor items like trash cans, chairs, and toys.</li>
+          <li>Charge your phone and backup batteries.</li>
+          <li>Prepare an emergency kit with water, food, flashlight, and first aid.</li>
+          <li>Know your shelter location or evacuation route.</li>
+          <li>Bring pets indoors and make a plan for them.</li>
+          <li>Check weather alerts from trusted sources.</li>
+          <li>Fill your gas tank in case of evacuation.</li>
+          <li>Store important documents in waterproof bags.</li>
+        </ul>
+
+        <h3>During a Storm (Expanded)</h3>
+        <ul>
+          <li>Stay indoors and away from windows.</li>
+          <li>Use flashlights instead of candles.</li>
+          <li>Listen to weather alerts on your phone, radio, or TV.</li>
+          <li>Do not drive through floodwater — “Turn Around, Don’t Drown.”</li>
+          <li>If told to evacuate, leave immediately.</li>
+          <li>Stay in an interior room during tornadoes.</li>
+          <li>Move to higher ground during floods.</li>
+        </ul>
+
+        <h3>After a Storm (Expanded)</h3>
+        <ul>
+          <li>Avoid floodwater; it may contain chemicals or debris.</li>
+          <li>Stay away from downed power lines.</li>
+          <li>Check on neighbors, especially older adults or disabled people.</li>
+          <li>Throw away spoiled food.</li>
+          <li>Wear gloves and boots when cleaning up debris.</li>
+          <li>Take photos of damage for insurance.</li>
+          <li>Watch out for mold growth in homes.</li>
+          <li>Do not use wet electrical appliances.</li>
+        </ul>
+
+      </div>
+
+     
+    </section>
+
+
+
+  </main>
+
+  <script>
+  function toggleDropdown() {
+    const dropdownMenu = document.getElementById('dropdownMenu');
+    dropdownMenu.style.display = (dropdownMenu.style.display === 'block') ? 'none' : 'block';
+  }
+
+  window.onclick = function(event) {
+    if (!event.target.matches('.nav-more-button')) {
+      const dropdowns = document.getElementsByClassName('nav-more-menu');
+      for (let i = 0; i < dropdowns.length; i++) {
+        const openDropdown = dropdowns[i];
+        if (openDropdown.style.display === 'block') {
+          openDropdown.style.display = 'none';
+        }
+      }
+    }
+  }
+</script>
+
+
+
+  <footer>StormGuard © 2026 · Built by Back’em Up Bratz</footer>
+  <script src="script.js"></script>
+</body>
+</html>          
+
